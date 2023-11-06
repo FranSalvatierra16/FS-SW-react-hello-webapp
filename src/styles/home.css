@@ -1,0 +1,15 @@
+.custom-card {
+  width: 18rem; /* Define el ancho de las tarjetas */
+  margin: 1rem; /* Define el margen entre las tarjetas */
+}
+
+.custom-card-img {
+  height: 200px; /* Define la altura de las imágenes en las tarjetas */
+  object-fit: cover; /* Controla cómo se ajusta la imagen en su contenedor */
+  /* Otras propiedades de estilo según tus necesidades */
+}
+
+/* Si deseas mantener un tamaño uniforme independientemente del número de tarjetas por fila: */
+.custom-card-col {
+  width: calc(25% - 2rem); /* Define el ancho de cada columna (25% para 4 tarjetas por fila) */
+}
