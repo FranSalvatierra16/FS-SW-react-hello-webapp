@@ -1,15 +1,113 @@
+body {
+  background: gray;
+  margin: 0; 
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
 .custom-card {
-  width: 18rem; 
+  width: 18rem;
   margin: 1rem; 
 }
 
 .custom-card-img {
-  height: 200px; 
-  object-fit: cover; 
- 
+  height: 200px;
+  object-fit: cover;
+}
+
+.custom-card-col {
+  flex: 0 0 auto;
+  margin-right: 10px; 
+}
+
+.planets-container .custom-card-col:last-child {
+  margin-right: 0;
+}
+
+.characters-container,
+.planets-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap; 
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.header {
+  background-color: #343a40; 
+  color: #ffffff; 
+  padding: 20px; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.header h1 {
+  margin: 0; 
+  font-size: 2em; 
 }
 
 
-.custom-card-col {
-  width: calc(25% - 2rem);
+
+.custom-card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+}
+
+.custom-card-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-card-body {
+  padding: 15px;
+}
+
+
+.custom-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.custom-card-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.custom-card-text.property {
+  color: #007bff; 
+  font-weight: bold;
+}
+
+.custom-card-text.response {
+  color: #4caf50; 
+}
+
+.custom-card-text:hover {
+  text-decoration: underline;
 }
